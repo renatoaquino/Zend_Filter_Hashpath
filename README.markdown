@@ -74,10 +74,10 @@ Configuration
 * overwrite_mode => Zend_Filter_Hashpath::OVERWRITE_NONE or Zend_Filter_Hashpath::OVERWRITE_ALL
 * hashfilename => Flag defining the behavior of renaming the file to a hash, default true
 
-	$filter = new Zend_Filter_Hashpath(array(
-		'base_dir'		=> APPLICATION_PATH."/../public/images/",
-		'directory_level'	=> 2, //The default value is 2
-		'overwrite_mode'	=> Zend_Filter_Hashpath::OVERWRITE_NONE, // Throws a Zend_Filter_Exception if a file with the same name exists
-		'hashfilename' 		=> false //Stores the files with the original name
-	));
+		$filter = new Zend_Filter_Hashpath(array(
+			'base_dir'		=> APPLICATION_PATH."/../public/images/",
+			'directory_level'	=> 2, //The default value is 2
+			'overwrite_mode'	=> Zend_Filter_Hashpath::OVERWRITE_NONE, // Throws a Zend_Filter_Exception if a file with the same name exists
+			'hashfilename' 		=> false //Stores the files with the original name
+		));
 
